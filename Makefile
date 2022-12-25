@@ -1,0 +1,3 @@
+all:
+	xsltproc -o index.html opml.xsl index.opml
+
