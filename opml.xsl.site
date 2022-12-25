@@ -24,6 +24,13 @@
           <link rel="stylesheet" href="oblox.css"/>
         </xsl:otherwise>
       </xsl:choose>
+      <xsl:choose>
+        <xsl:when test="head/additionalStyle">
+          <style>
+            <xsl:value-of select="head/additionalStyle"/>
+          </style>
+        </xsl:when>
+      </xsl:choose>
     </head>
     <body>
       <h1><span class='at'><xsl:value-of select="head/title"/></span></h1>
@@ -35,8 +42,10 @@
       </xsl:choose>
       <xsl:apply-templates select="body/outline"/>
       <p class="footer"><xsl:value-of select="head/license"/> | <xsl:value-of select="head/copyleft"/></p>
-      <p style="font-size: 10px;">Date modified: <xsl:value-of select="head/dateModified"/></p>
-      <p style="text-align: right; font-size: 10px;">Made with <a href="https://oblox.bsd.am/">oblox</a></p>
+      <div>
+        <p style="float: left;  font-size: 10px;">Date modified: <xsl:value-of select="head/dateModified"/></p>
+        <p style="float: right; font-size: 10px;"><a href="https://oblox.bsd.am/">Made with oblox</a></p>
+      </div>
     </body>
   </html>
 </xsl:template>

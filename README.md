@@ -19,8 +19,10 @@
 
 - `head/title` for the website title.
 - `head/logo` for the website logo.
-- `head/license` for the license (e.g. `CC BY 4.0`)
-- `head/copyleft` for the copy~~right~~left (e.g. ` All Rights Reverse Engineered`)
+- `head/license` for the license (e.g. `CC BY 4.0`).
+- `head/copyleft` for the copy~~right~~left (e.g. ` All Rights Reverse Engineered`).
+- `head/style` for the CSS style file (e.g. `style.css`), defaults to `oblox.css`.
+- `head/additionalStyle` for inline CSS style.
 
 ## Roadmap
 
