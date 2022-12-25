@@ -7,11 +7,11 @@
 
 ## Usage
 
-1. First, copy the XSL template file
-   For a website
-   `cp opml.xsl.site opml.xsl`
-   For a blog
-   `cp opml.xsl.blog opml.xsl`
+1. First, copy the XSL template file  
+   For a website  
+   `cp opml.xsl.site opml.xsl`  
+   For a blog  
+   `cp opml.xsl.blog opml.xsl`  
 2. Open an Outliner (e.g. Drummer / Electric Drummer) and create an outline file named `index.opml`
 3. Run `make`
 
