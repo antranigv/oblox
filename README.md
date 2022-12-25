@@ -23,6 +23,7 @@
 - `head/copyleft` for the copy~~right~~left (e.g. ` All Rights Reverse Engineered`).
 - `head/style` for the CSS style file (e.g. `style.css`), defaults to `oblox.css`.
 - `head/additionalStyle` for inline CSS style.
+- `head/additionalHead` for additional elements in `<head>`.
 
 ## Roadmap
 

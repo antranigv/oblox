@@ -31,6 +31,11 @@
               </style>
             </xsl:when>
           </xsl:choose>
+          <xsl:choose>
+            <xsl:when test="head/additionalHead">
+              <xsl:value-of select="head/additionalHead" disable-output-escaping="yes"/>
+            </xsl:when>
+          </xsl:choose>
         </head>
         <body>
           <h1><span class='at'><xsl:value-of select="head/title"/></span></h1>
